@@ -38,7 +38,7 @@ const LeftBar = () => {
                 <ItemIconWrapper> <Event /> </ItemIconWrapper>
                 <Typography>Events</Typography>
             </BoxItem>
-            <BoxItem>
+            <BoxItem>   
                 <ItemIconWrapper><Notifications /></ItemIconWrapper>
                 <Typography>Notifications</Typography>
             </BoxItem>
