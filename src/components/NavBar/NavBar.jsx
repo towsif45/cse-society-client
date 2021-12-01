@@ -9,7 +9,7 @@ import { deepOrange } from "@mui/material/colors";
 
 const NavBar = () => {
     return (
-        <AppBar position="static">
+        <AppBar position="fixed">
             <Toolbar>
                 <Typography variant="h6">
                     CSE Society

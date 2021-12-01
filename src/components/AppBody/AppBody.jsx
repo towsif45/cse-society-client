@@ -1,17 +1,17 @@
 import { Grid } from "@mui/material";
+import Feed from "../Feed/Feed";
 import LeftBar from "../LeftBar/LeftBar";
+
+import "../AppBody/styles.css";
 
 const AppBody = () => {
     return (
-        <Grid container>
+        <Grid container height={'100%'}>
             <Grid item xs={2}>
                 <LeftBar />
             </Grid>
-            <Grid item xs={7}>
-                <h1> feed </h1>
-            </Grid>
-            <Grid item xs={3}>
-                <h1> Events </h1>
+            <Grid item className="grid-scroll" xs={10}>
+                <Feed />
             </Grid>
         </Grid>
     );
