@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import Feed from "../Feed/Feed";
 import LeftBar from "../LeftBar/LeftBar";
 
-import "../AppBody/styles.css";
+import "./styles.css";
 
 const AppBody = () => {
     return (
