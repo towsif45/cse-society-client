@@ -7,7 +7,7 @@ import "./styles.css";
 const AppBody = () => {
     return (
         <Grid container height={'100%'}>
-            <Grid item xs={2}>
+            <Grid item xs={2} borderRight= '1px solid #A9A9A9'>
                 <LeftBar />
             </Grid>
             <Grid item className="grid-scroll" xs={10}>

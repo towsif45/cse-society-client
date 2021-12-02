@@ -3,9 +3,9 @@ import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/material";
 
 const ContainerLeftbar = styled(Box)(({ theme }) => ({
-    margin: theme.spacing(0, 1),
+    height: '100%',
+    //paddingRight: theme.spacing(1),
     // backgroundColor: 'yellow',
-    borderColor: 'black',
     paddingTop: theme.spacing(10),
     position: 'fixed'
 }));
