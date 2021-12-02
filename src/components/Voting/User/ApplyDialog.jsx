@@ -21,3 +21,5 @@ const ApplyDialog = (props) => {
         </Dialog>
     );
 };
+
+export default ApplyDialog;

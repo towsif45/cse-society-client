@@ -1,29 +1,26 @@
-import { Container, styled, Typography } from "@mui/material";
+import { Container, styled} from "@mui/material";
+import CardSimplePost from "../CardSimplePost/CardSimplePost";
 
 const ContainerFeed = styled(Container)(({ theme }) => ({
     paddingTop: theme.spacing(10),
-    backgroundColor: 'yellow',
+    // backgroundColor: 'yellow',
     height: '100%',
-    overflow: 'auto'
+    overflow: 'auto',
+    
 }));
 
 const Feed = () => {
     return (
         <ContainerFeed>
-            <Typography variant="h3"> Feeeeeeeeeeeed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
-            <Typography variant="h3"> Feed </Typography>
+            <CardSimplePost 
+            post="ke kovor tomader..."
+            name = "Tanvir Rahman Tareq"
+            date="5 December, 2021"  />
+
+            <CardSimplePost 
+            post="Amar basa BUET campus. MEOW"
+            name = "Farina Tahsin Chowdhury"
+            date="6 December, 2021"  />
         </ContainerFeed>
     );
 };
