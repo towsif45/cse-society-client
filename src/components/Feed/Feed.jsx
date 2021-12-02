@@ -13,7 +13,7 @@ const Feed = () => {
     return (
         <ContainerFeed>
             <CardSimplePost 
-            post="ke kovor tomader..."
+            post="ke kovor tomader... :-)"
             name = "Tanvir Rahman Tareq"
             date="5 December, 2021"  />
 
@@ -21,6 +21,23 @@ const Feed = () => {
             post="Amar basa BUET campus. MEOW"
             name = "Farina Tahsin Chowdhury"
             date="6 December, 2021"  />
+
+            <CardSimplePost 
+            post="Aaaaaaaaaaaaaaaaaaaaaaa..."
+            name = "Farina Tahsin Chowdhury"
+            date="6 December, 2021"  /> 
+            
+            <CardSimplePost 
+            post="Seriously?"
+            name = "Farina Tahsin Chowdhury"
+            date="6 December, 2021"  /> 
+            
+            <CardSimplePost 
+            post=":-)"
+            name = "Farina Tahsin Chowdhury"
+            date="6 December, 2021"  />
+
+
         </ContainerFeed>
     );
 };
