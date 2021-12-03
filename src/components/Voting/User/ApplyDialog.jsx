@@ -1,9 +1,7 @@
 import { Button, Dialog, DialogActions, DialogContent, DialogTitle, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, Typography } from "@mui/material";
 
-const positions = ['Vice President', 'General Secretary', 'Assistant General Secretary', 'Executive Member'];
-
 const ApplyDialog = (props) => {
-    const {onClose, open, data} = props;
+    const {onClose, open, data, positions} = props;
 
     const handleClose = () => {
         onClose(data);
