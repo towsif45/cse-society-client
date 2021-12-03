@@ -24,9 +24,6 @@ const ApplyDialog = (props) => {
                                 <FormControlLabel value={pos} control={<Radio />} label={pos} />
                             ))
                         }
-                        {/* <FormControlLabel value="female" control={<Radio />} label="Female" />
-                        <FormControlLabel value="male" control={<Radio />} label="Male" />
-                        <FormControlLabel value="other" control={<Radio />} label="Other" /> */}
                     </RadioGroup>
                 </FormControl>
             </DialogContent>
