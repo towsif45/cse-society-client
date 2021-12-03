@@ -1,4 +1,4 @@
-import { Event, Home, Logout, Message, Notifications, People } from "@mui/icons-material";
+import { Event, Home, Logout, Message, Notifications, People, Poll } from "@mui/icons-material";
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/material";
 
@@ -37,6 +37,10 @@ const LeftBar = () => {
             <BoxItem>
                 <ItemIconWrapper> <Event /> </ItemIconWrapper>
                 <Typography>Events</Typography>
+            </BoxItem>
+            <BoxItem>
+                <ItemIconWrapper> <Poll /> </ItemIconWrapper>
+                <Typography>Poll</Typography>
             </BoxItem>
             <BoxItem>   
                 <ItemIconWrapper><Notifications /></ItemIconWrapper>

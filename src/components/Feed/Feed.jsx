@@ -13,7 +13,7 @@ const Feed = () => {
     return (
         <ContainerFeed>
             <CardSimplePost 
-            post="ke kovor tomader... :-)"
+            post="ke kovor tomader? Project kotodur? :-)"
             name = "Tanvir Rahman Tareq"
             date="5 December, 2021"  />
 

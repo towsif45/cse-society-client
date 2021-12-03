@@ -1,6 +1,7 @@
 import { Grid } from "@mui/material";
-import Feed from "../Feed/Feed";
+//import Feed from "../Feed/Feed";
 import LeftBar from "../LeftBar/LeftBar";
+import PollEventPage from "../Voting/User/PollEventPage";
 
 import "./styles.css";
 
@@ -11,7 +12,8 @@ const AppBody = () => {
                 <LeftBar />
             </Grid>
             <Grid item className="grid-scroll" xs={10}>
-                <Feed />
+                {/* <Feed /> */}
+                <PollEventPage />
             </Grid>
         </Grid>
     );
