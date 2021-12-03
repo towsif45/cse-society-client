@@ -1,9 +1,9 @@
 import { Event, Home, Logout, Message, Notifications, People, Poll } from "@mui/icons-material";
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const ContainerLeftbar = styled(Box)(({ theme }) => ({
-    height: '100%',
     //paddingRight: theme.spacing(1),
     // backgroundColor: 'yellow',
     paddingTop: theme.spacing(10),
@@ -11,8 +11,15 @@ const ContainerLeftbar = styled(Box)(({ theme }) => ({
 }));
 
 const BoxItem = styled(Box)(({ theme }) => ({
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    paddingLeft: theme.spacing(3),
+    paddingRight: theme.spacing(3),
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
     display: 'flex',
-    padding: theme.spacing(1),
+    width: '100%',
+    //padding: theme.spacing(1),
     cursor: 'pointer'
 }));
 
@@ -26,10 +33,13 @@ const ItemIconWrapper = styled('div')(({ theme }) => ({
 const LeftBar = () => {
     return (
         <ContainerLeftbar>
-            <BoxItem >
-                <ItemIconWrapper> <Home /> </ItemIconWrapper>
-                <Typography marginRight={'theme.spacing(2)'}>Home</Typography>
-            </BoxItem>
+            <Link to={'/'} >
+                <BoxItem>
+                    <ItemIconWrapper> <Home /> </ItemIconWrapper>
+                    <Typography marginRight={'theme.spacing(2)'}>Home</Typography>
+                </BoxItem>
+            </Link>
+            
             <BoxItem>
                 <ItemIconWrapper> <People /> </ItemIconWrapper>
                 <Typography>People</Typography>
@@ -38,10 +48,13 @@ const LeftBar = () => {
                 <ItemIconWrapper> <Event /> </ItemIconWrapper>
                 <Typography>Events</Typography>
             </BoxItem>
-            <BoxItem>
-                <ItemIconWrapper> <Poll /> </ItemIconWrapper>
-                <Typography>Poll</Typography>
-            </BoxItem>
+            <Link to={'/polls'}>
+                <BoxItem>
+                    <ItemIconWrapper> <Poll /> </ItemIconWrapper>
+                    <Typography>Poll</Typography>
+                </BoxItem>
+            </Link>
+            
             <BoxItem>   
                 <ItemIconWrapper><Notifications /></ItemIconWrapper>
                 <Typography>Notifications</Typography>
