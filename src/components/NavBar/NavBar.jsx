@@ -50,7 +50,7 @@ const NavBar = () => {
                             disableElevation 
                             startIcon={<Poll /> }
                             >
-                            Create poll
+                            POLL MANAGEMENT
                         </Button>
                     </Link>
                     

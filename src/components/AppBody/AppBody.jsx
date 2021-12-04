@@ -7,6 +7,7 @@ import {Route, Routes} from "react-router-dom";
 import "./styles.css";
 import Feed from "../Feed/Feed";
 import CreatePollPage from "../Voting/Admin/CreatePollPage";
+import ManagePollPage from "../Voting/Admin/ManagePollPage";
 
 const AppBody = () => {
     return (
@@ -24,6 +25,7 @@ const AppBody = () => {
                     <Route exact path="/" element={<Feed />} />
                     <Route exact path="/polls" element={<PollEventPage />} />
                     <Route exact path="/create-poll" element={<CreatePollPage />} />
+                    <Route exact path="/manage-poll" element={<ManagePollPage />} />
                 </Routes>
                 
             </Grid>
