@@ -7,7 +7,9 @@ const ContainerLeftbar = styled(Container)(({ theme }) => ({
     //paddingRight: theme.spacing(1),
     // backgroundColor: 'yellow',
     paddingTop: theme.spacing(10),
-    position: 'fixed'
+    height: '100vh',
+    position: 'sticky',
+    top: 0
 }));
 
 const BoxItem = styled(Box)(({ theme }) => ({

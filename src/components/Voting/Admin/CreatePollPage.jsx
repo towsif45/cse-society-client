@@ -8,7 +8,6 @@ const CreatePollContainer = styled(Container)(({ theme }) => ({
     paddingTop: theme.spacing(10),
     height: '100%',
     overflow: 'auto',
-    marginLeft: theme.spacing(8)
 }));
 
 const CreatePollPage = () => {
@@ -113,7 +112,7 @@ const CreatePollPage = () => {
                     }}>
                     <BasicDatePicker />
                 </Box>
-                <Button variant="contained"> Create poll </Button>
+                <Button variant="contained" style={{marginBottom: 10}}> Create poll </Button>
             </form>
 
 
