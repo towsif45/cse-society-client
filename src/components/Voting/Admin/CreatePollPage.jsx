@@ -40,7 +40,9 @@ const CreatePollPage = () => {
         <CreatePollContainer>
             <Typography variant="h4">Create a Poll</Typography>
             <br />
-            <Typography variant="body2">No poll is currently going on. Fill up the form to create a new poll. </Typography>
+            <Typography variant="body2">
+                No poll is currently going on. Fill up the form to create a new poll.
+            </Typography>
             <form autoComplete="off">
                 <Box
                     sx={{
