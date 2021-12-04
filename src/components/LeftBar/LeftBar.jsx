@@ -11,13 +11,14 @@ const ContainerLeftbar = styled(Box)(({ theme }) => ({
 }));
 
 const BoxItem = styled(Box)(({ theme }) => ({
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    paddingLeft: theme.spacing(3),
-    paddingRight: theme.spacing(3),
-    paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
+    // marginLeft: 'auto',
+    // marginRight: 'auto',
+    // paddingLeft: theme.spacing(3),
+    // paddingRight: theme.spacing(3),
+    // paddingTop: theme.spacing(1),
+    marginBottom: theme.spacing(4),
     display: 'flex',
+    alignItems: 'center',
     width: '100%',
     //padding: theme.spacing(1),
     cursor: 'pointer'
@@ -30,42 +31,48 @@ const ItemIconWrapper = styled('div')(({ theme }) => ({
     padding: theme.spacing(0, 2)
 }));
 
+const ResponsiveTypography = styled(Typography)(({theme}) => ({
+    [theme.breakpoints.down('md')]: {
+        display: 'none'
+    }
+}));
+
 const LeftBar = () => {
     return (
         <ContainerLeftbar>
             <Link to={'/'} >
                 <BoxItem>
                     <ItemIconWrapper> <Home /> </ItemIconWrapper>
-                    <Typography marginRight={'theme.spacing(2)'}>Home</Typography>
+                    <ResponsiveTypography>Home</ResponsiveTypography>
                 </BoxItem>
             </Link>
             
             <BoxItem>
                 <ItemIconWrapper> <People /> </ItemIconWrapper>
-                <Typography>People</Typography>
+                <ResponsiveTypography>People</ResponsiveTypography>
             </BoxItem>
             <BoxItem>
                 <ItemIconWrapper> <Event /> </ItemIconWrapper>
-                <Typography>Events</Typography>
+                <ResponsiveTypography>Events</ResponsiveTypography>
             </BoxItem>
             <Link to={'/polls'}>
                 <BoxItem>
                     <ItemIconWrapper> <Poll /> </ItemIconWrapper>
-                    <Typography>Poll</Typography>
+                    <ResponsiveTypography>Poll</ResponsiveTypography>
                 </BoxItem>
             </Link>
             
             <BoxItem>   
                 <ItemIconWrapper><Notifications /></ItemIconWrapper>
-                <Typography>Notifications</Typography>
+                <ResponsiveTypography>Notifications</ResponsiveTypography>
             </BoxItem>
             <BoxItem>
                 <ItemIconWrapper><Message /></ItemIconWrapper>
-                <Typography>Messages</Typography>
+                <ResponsiveTypography>Messages</ResponsiveTypography>
             </BoxItem>
             <BoxItem>
                 <ItemIconWrapper><Logout /></ItemIconWrapper>
-                <Typography>Log out</Typography>
+                <ResponsiveTypography>Log out</ResponsiveTypography>
             </BoxItem>
         </ContainerLeftbar>
     );
