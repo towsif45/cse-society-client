@@ -18,9 +18,6 @@ const AppBody = (props) => {
             </Grid>
             
             <Grid item className="grid-scroll" xs={10}>
-                {/* <Feed /> */}
-                {/* <PollEventPage /> */}
-
                 
                 {component}
                 
