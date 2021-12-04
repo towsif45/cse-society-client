@@ -8,7 +8,7 @@ const CardPost = styled(Card)(({ theme }) => ({
 }));
 
 const ResponsiveButton = styled(Button)(({ theme }) => ({
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
         display: 'none'
     }
 }));

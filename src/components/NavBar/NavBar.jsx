@@ -16,7 +16,7 @@ const ResponsiveSearch = styled(Search)(({ theme }) => ({
 }));
 
 const ResponsiveButton = styled(Button)(({ theme }) => ({
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
         display: 'none'
     }
 }));

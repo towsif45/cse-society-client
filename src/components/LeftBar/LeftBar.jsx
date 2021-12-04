@@ -1,9 +1,9 @@
 import { Event, Home, Logout, Message, Notifications, People, Poll } from "@mui/icons-material";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { styled } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const ContainerLeftbar = styled(Box)(({ theme }) => ({
+const ContainerLeftbar = styled(Container)(({ theme }) => ({
     //paddingRight: theme.spacing(1),
     // backgroundColor: 'yellow',
     paddingTop: theme.spacing(10),
