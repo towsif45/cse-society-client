@@ -40,7 +40,7 @@ export default function SignIn() {
         >
           <Container>
             <center>
-              <img src = {Logo} width = "150" height = "100" />
+              <img alt='logo' src = {Logo} width = "150" height = "100" />
             </center>
           </Container>
           <Typography component="h1" variant="h5">
