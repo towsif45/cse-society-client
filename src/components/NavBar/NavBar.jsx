@@ -55,7 +55,7 @@ const NavBar = () => {
 
     const handleSearchButton = () => {
         if(searchText !== ""){
-            navigate('/search-result');
+            navigate('/profile');
         }
     }
 

@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import AppBody from "./components/AppBody/AppBody";
 import Feed from "./components/Feed/Feed";
 import NavBar from "./components/NavBar/NavBar";
+import ProfilePage from "./components/Profile/ProfilePage";
 import SearchResult from "./components/SearchResult/SearchResult";
 import SignIn from "./components/SignIn/SignInPage";
 import CreatePollPage from "./components/Voting/Admin/CreatePollPage";
@@ -19,6 +20,7 @@ const App = () => {
         <Route exact path="/create-poll" element={<><NavBar /> <AppBody component={<CreatePollPage />} /></>} />
         <Route exact path="/manage-poll" element={<><NavBar /> <AppBody component={<ManagePollPage />} /></>} />
         <Route exact path="/search-result" element={<> <NavBar /> <AppBody component={<SearchResult />} /></>} />
+        <Route exact path="/profile" element={<> <NavBar /> <AppBody component={<ProfilePage />} /></>} />
       </Routes>
 
     </>

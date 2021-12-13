@@ -1,4 +1,4 @@
-import { CommentOutlined, MoreVert, PostAddRounded, Share, ThumbDown, ThumbDownOutlined, ThumbUp, ThumbUpOutlined } from "@mui/icons-material";
+import { CommentOutlined, MoreVert, PostAddRounded, ThumbDown, ThumbDownOutlined, ThumbUp, ThumbUpOutlined } from "@mui/icons-material";
 import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, Collapse, IconButton, styled, TextField, Typography } from "@mui/material";
 import { useState } from "react";
 
@@ -104,9 +104,6 @@ const CardSimplePost = (props) => {
 
                 </ExpandMore>
 
-                <Box sx={{ flexGrow: 1 }} />
-                <ResponsiveButton size="small" startIcon={<Share />}>Share</ResponsiveButton>
-                <ResponsiveIconButton><Share /></ResponsiveIconButton>
                 <Box sx={{ flexGrow: 1 }} />
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
