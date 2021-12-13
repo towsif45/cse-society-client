@@ -14,8 +14,8 @@ const ProfilePage = (props) => {
                 <Avatar alt={name} src="/broken-image.jpg" sx={{ width: 100, height: 100 }} />
             </Box>
             <Box sx={{paddingTop: 3, paddingBottom: 3}}>
-                <Typography variant="h6">Towsif Hossain</Typography>
-                <Typography variant="subtitle1">towsifhossain5120@gmail.com</Typography>
+                <Typography variant="h6">{name}</Typography>
+                <Typography variant="subtitle1">{email}</Typography>
             </Box>
             <hr />
             <Typography sx={{paddingTop: 1, paddingBottom: 1}} variant="h5">Posts</Typography>
