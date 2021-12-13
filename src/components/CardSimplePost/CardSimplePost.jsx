@@ -113,13 +113,14 @@ const CardSimplePost = (props) => {
                 <CardContent>
                     <Box
                         display='flex'>
-                        <Avatar src="/broken-image.jpg" />
+                        <Avatar sx={{ width: 24, height: 24 }} src="/broken-image.jpg" />
                         <Box sx={{ flexGrow: 1, marginLeft: 2 }}>
                             <TextField fullWidth variant='standard' placeholder="Add a public comment..." />
                         </Box>
 
                         <IconButton> <PostAddRounded /> </IconButton>
                     </Box>
+                    {/* Fetch comments from database here */}
                 </CardContent>
             </Collapse>
         </CardPost >

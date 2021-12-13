@@ -3,17 +3,16 @@ import { AppBar, Box, Button, IconButton, styled, Toolbar, Typography } from "@m
 import { Poll, PostAdd, Search } from "@mui/icons-material";
 import { Searchbox } from "./style/searchbar/Searchbox";
 import { StyledInputBase } from "./style/searchbar/StyledInputBase";
-import { SearchIconWrapper } from "./style/searchbar/SearchIconWrapper";
 import { Iconbox } from "./style/iconbar/Iconbox";
 import PostDialog from "../PostDialog/PostDialog";
-import { Link } from "react-router-dom";
-import Logo from "../SignIn/cse-logo-cut.png"
+import { Link, useNavigate } from "react-router-dom";
+import Logo from "../SignIn/cse-logo-cut.png";
 
-const ResponsiveSearch = styled(Search)(({ theme }) => ({
-    [theme.breakpoints.down('md')]: {
-        display: 'none'
-    }
-}));
+// const ResponsiveSearch = styled(Search)(({ theme }) => ({
+//     [theme.breakpoints.down('md')]: {
+//         display: 'none'
+//     }
+// }));
 
 const ResponsiveButton = styled(Button)(({ theme }) => ({
     [theme.breakpoints.down('md')]: {
@@ -27,7 +26,7 @@ const ResponsiveIconButton = styled(IconButton)(({ theme }) => ({
     }
 }));
 
-const ResponsiveTypography = styled(Typography)(({theme}) => ({
+const ResponsiveTypography = styled(Typography)(({ theme }) => ({
     [theme.breakpoints.down('md')]: {
         display: 'none'
     },
@@ -37,6 +36,8 @@ const ResponsiveTypography = styled(Typography)(({theme}) => ({
 const NavBar = () => {
     const [open, setOpen] = useState(false);
     const [post, setPost] = useState("");
+    const [searchText, setSearchText] = useState("");
+    const navigate = useNavigate();
 
     const handleClickOpen = () => {
         setOpen(true);
@@ -48,6 +49,16 @@ const NavBar = () => {
         setPost(value);
     };
 
+    const handleSearchText = (e) => {
+        setSearchText(e.target.value);
+    };
+
+    const handleSearchButton = () => {
+        if(searchText !== ""){
+            navigate('/search-result');
+        }
+    }
+
     return (
         <AppBar position="fixed">
             <Toolbar>
@@ -56,11 +67,13 @@ const NavBar = () => {
                     CSE Society
                 </ResponsiveTypography>
                 <Searchbox>
-                    <SearchIconWrapper>
+                    {/* <SearchIconWrapper>
                         <ResponsiveSearch />
-                    </SearchIconWrapper>
+                    </SearchIconWrapper> */}
 
                     <StyledInputBase
+                        value={searchText}
+                        onChange={handleSearchText}
                         placeholder="Search…"
                         inputProps={
                             {
@@ -68,6 +81,10 @@ const NavBar = () => {
                             }
                         }
                     />
+                    <IconButton
+                        onClick={handleSearchButton}>
+                        <Search style={{ fill: '#FFF' }} />
+                    </IconButton>
                 </Searchbox>
                 <Box sx={{ flexGrow: 1 }} />
                 <Iconbox>
